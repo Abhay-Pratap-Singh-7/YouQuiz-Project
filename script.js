@@ -30,8 +30,8 @@ let data = {};
 let quizData = {};
 
 const BASE_URL = 'https://www.googleapis.com/youtube/v3/search';
-const API_KEY = 'AIzaSyBCnfNBWT_Bm3InqrXpRxArSYOJZGm-iVQ';
-const QUIZ_API_URL = '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';
+const API_KEY = '';
+const QUIZ_API_URL = '';
 
 async function fetchVideoDetails(videoId) {
     const url = `${BASE_URL}?q=${videoId}&key=${API_KEY}&part=snippet&type=video&videoDuration=medium&maxResults=10`;
