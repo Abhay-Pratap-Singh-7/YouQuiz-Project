@@ -1,0 +1,359 @@
+
+@import url('https://fonts.cdnfonts.com/css/effra');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: effra;
+    background-color: #fffbed;
+    background-size: 10%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    padding: 15px 25px;
+    border-bottom: 3px solid #000000;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.header h1 {
+    margin-left: 30px;
+    font-size: px;
+}
+
+.header-btn button {
+    background-color: transparent;
+    color: #fffbed;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header-btn button:hover {
+    background-color: #45a049;
+    color: white;
+}
+
+#sign-up {
+    background-color: #fffbed;
+    color: rgb(0, 0, 0);
+}
+
+.main {
+    display: block;
+    padding: 50px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    width: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.main:hover {
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.1);
+}   
+
+.main h2 {
+    font-size: 30px;
+    margin-bottom: 10px;}
+
+.main p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.main button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    transition-duration: all 2s ease-in-out;
+}
+
+.main button:hover {
+    background-color: #45a049;
+}
+
+.search {
+    display: none;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+.search input {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 15px 0 0 15px;
+    width: 500px;
+    height: 45px;
+    outline: none;
+}
+
+.search input:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+}
+
+.search button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.search button:hover {
+    background-color: #45a049;
+    scale: 1.05 1.00;
+}
+
+.videos {
+    display: none;
+    justify-content: center;
+    gap: 40px;
+    width: 90%;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    flex-grow: 1;
+    margin-bottom: 30px;
+}
+
+.video-card {
+    background-color: white;
+    border: 1px solid #45a049;
+    border-radius: 5px;
+    width: 400px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 5px;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.video-card img {
+    width: 100%;
+    height: auto;
+}
+
+.video-card h3 {
+    font-size: 18px;
+    margin: 10px;
+}
+
+.video-card p {
+    font-size: 14px;
+    margin: 0 10px 5px 10px;
+    color: #666;
+}
+
+.video-card button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.video-card button:hover {
+    background-color: #45a049;
+}
+
+
+.quiz {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    color: white;
+}
+
+.quizType {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2f2f2f;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-direction: column;
+    text-align: left;
+}
+
+#quiz-type {
+    width: 48%; 
+}
+
+.question-card {
+    background-color: #fffbed;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 40%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.question {
+    font-size: 18px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color: #2f2f2f;
+    text-align: left;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.options button {
+    background-color: #eeeeee;
+    color: #222;
+    border: none;
+    padding: 20px 10px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 12px;
+    transition: background-color 0.3s;
+}
+
+.options button:hover {
+    background-color: #009e227b;
+}
+
+#quiz-type {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #2f2f2f;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    width: 100%;
+}
+
+.submit {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+}
+
+#next-btn {
+    background-color: #eeeeee;
+    color: #222;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+#next-btn:hover {
+    background-color: #ddd;
+}
+
+#result-section {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    color: white;
+}
+
+#quiz-completed {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #2f2f2f;
+}
+
+#quiz-score {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #2f2f2f;
+}
+
+#new-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+
+footer {
+    background-color: #4CAF50;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    color: white;
+    font-family: effra;
+    border-top: 2px solid #000000;
+    min-height: 5vh;
+    margin: auto 0;
+}

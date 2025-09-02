@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> YouQuiz </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1> YouQuiz </h1>
+        <div class="header-btn">
+            <button> Home </button>
+            <button> About </button>
+            <button> Contact </button>
+            <button id="sign-up"> Sign Up </button>
+        </div>
+    </div>
+
+    <div class="main" id="welcome-screen">
+        <h2> Welcome to YouQuiz! </h2>
+        <p> Test what you have learned from recent YouTube video you watched. </p>
+        <hr>
+        <button id="get-started"> Get Started </button>
+    </div>
+
+    <div class="search" id="search-bar">
+        <input id="inputText" type="text" placeholder="Search for YouTube video...">
+        <button id="getVideo"> Search </button>
+    </div>
+
+    <div class="videos" id="video-section">
+        <div class="video-card">
+            <img src="thumbnail.png" alt="Video Thumbnail" id="thumbnail">
+            <h3 id="video-title"> Video Title 1 </h3>
+            <p id="video-description"> Brief description of the video. </p>
+            <p id="vidId" style="display: none;"></p>
+            <button class="start-quiz-btn"> Take Quiz </button>
+        </div>
+    </div>
+
+
+    <div class="quiz">
+        <div class="question-card">
+            <div class="question">
+                <p id="question-text">Question text goes here</p>
+            </div>
+            <hr>
+            <div class="options">
+                <button class="option-btn" id="option-1"> Option 1 </button>
+                <button class="option-btn" id="option-2"> Option 2 </button>
+                <button class="option-btn" id="option-3"> Option 3 </button>
+                <button class="option-btn" id="option-4"> Option 4 </button>
+            </div>
+            <hr>
+            <div class="submit">
+                <button id="next-btn"> NEXT </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="result-section">
+        <h2 id="quiz-completed"> Quiz Results </h2>
+        <p id="quiz-score"> Your results will be displayed here. </p>
+        <button id="new-btn"> Retake Quiz </button>
+    </div>
+
+    <footer>
+        <p> &copy; 2025 YouQuiz. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

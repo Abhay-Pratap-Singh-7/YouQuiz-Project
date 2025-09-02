@@ -1,0 +1,394 @@
+{
+    "questions": [
+        {
+            "id": "1",
+            "text": "What does HTML stand for?",
+            "type": "mcq",
+            "difficulty": "easy",
+            "options": [
+                "Hypertext Markup Language",
+                "Hypertext Markdown Language",
+                "Hypertext Making Language",
+                "Hypertext Modern Language"
+            ],
+            "correctAnswer": "Hypertext Markup Language"
+        },
+        {
+            "id": "2",
+            "text": "What is the basic building block of HTML?",
+            "type": "mcq",
+            "difficulty": "easy",
+            "options": [
+                "Tags",
+                "Styles",
+                "Scripts",
+                "Elements"
+            ],
+            "correctAnswer": "Tags"
+        },
+        {
+            "id": "3",
+            "text": "Which tag is used to create the largest heading?",
+            "type": "mcq",
+            "difficulty": "easy",
+            "options": [
+                "<h1>",
+                "<h6>",
+                "<head>",
+                "<header>"
+            ],
+            "correctAnswer": "<h1>"
+        },
+        {
+            "id": "4",
+            "text": "What tag is used to create a paragraph?",
+            "type": "mcq",
+            "difficulty": "easy",
+            "options": [
+                "<p>",
+                "<para>",
+                "<text>",
+                "<paragraph>"
+            ],
+            "correctAnswer": "<p>"
+        },
+        {
+            "id": "5",
+            "text": "Which tag creates a line break?",
+            "type": "mcq",
+            "difficulty": "easy",
+            "options": [
+                "<br>",
+                "<break>",
+                "<lb>",
+                "<newline>"
+            ],
+            "correctAnswer": "<br>"
+        },
+        {
+            "id": "6",
+            "text": "What tag is used to create a hyperlink?",
+            "type": "mcq",
+            "difficulty": "easy",
+            "options": [
+                "<a>",
+                "<link>",
+                "<href>",
+                "<url>"
+            ],
+            "correctAnswer": "<a>"
+        },
+        {
+            "id": "7",
+            "text": "Which attribute specifies the URL in an anchor tag?",
+            "type": "mcq",
+            "difficulty": "easy",
+            "options": [
+                "href",
+                "src",
+                "link",
+                "url"
+            ],
+            "correctAnswer": "href"
+        },
+        {
+            "id": "8",
+            "text": "What tag is used to insert an image?",
+            "type": "mcq",
+            "difficulty": "easy",
+            "options": [
+                "<img>",
+                "<image>",
+                "<pic>",
+                "<photo>"
+            ],
+            "correctAnswer": "<img>"
+        },
+        {
+            "id": "9",
+            "text": "Which attribute specifies the image source?",
+            "type": "mcq",
+            "difficulty": "easy",
+            "options": [
+                "src",
+                "href",
+                "source",
+                "img-src"
+            ],
+            "correctAnswer": "src"
+        },
+        {
+            "id": "10",
+            "text": "What tag is used to create an unordered list?",
+            "type": "mcq",
+            "difficulty": "easy",
+            "options": [
+                "<ul>",
+                "<ol>",
+                "<list>",
+                "<unordered>"
+            ],
+            "correctAnswer": "<ul>"
+        },
+        {
+            "id": "11",
+            "text": "Which tag is used to create a table row?",
+            "type": "mcq",
+            "difficulty": "medium",
+            "options": [
+                "<tr>",
+                "<td>",
+                "<table-row>",
+                "<row>"
+            ],
+            "correctAnswer": "<tr>"
+        },
+        {
+            "id": "12",
+            "text": "What tag is used to create a table data cell?",
+            "type": "mcq",
+            "difficulty": "medium",
+            "options": [
+                "<td>",
+                "<tr>",
+                "<cell>",
+                "<data>"
+            ],
+            "correctAnswer": "<td>"
+        },
+        {
+            "id": "13",
+            "text": "Which tag defines the header of an HTML document?",
+            "type": "mcq",
+            "difficulty": "medium",
+            "options": [
+                "<head>",
+                "<header>",
+                "<top>",
+                "<doc-head>"
+            ],
+            "correctAnswer": "<head>"
+        },
+        {
+            "id": "14",
+            "text": "What tag contains the visible content of an HTML document?",
+            "type": "mcq",
+            "difficulty": "medium",
+            "options": [
+                "<body>",
+                "<content>",
+                "<main>",
+                "<visible>"
+            ],
+            "correctAnswer": "<body>"
+        },
+        {
+            "id": "15",
+            "text": "Which tag is used to define important text?",
+            "type": "mcq",
+            "difficulty": "medium",
+            "options": [
+                "<strong>",
+                "<important>",
+                "<bold>",
+                "<emphasis>"
+            ],
+            "correctAnswer": "<strong>"
+        },
+        {
+            "id": "16",
+            "text": "What tag is used to define emphasized text?",
+            "type": "mcq",
+            "difficulty": "medium",
+            "options": [
+                "<em>",
+                "<emphasis>",
+                "<italic>",
+                "<stress>"
+            ],
+            "correctAnswer": "<em>"
+        },
+        {
+            "id": "17",
+            "text": "Which tag creates a horizontal rule?",
+            "type": "mcq",
+            "difficulty": "medium",
+            "options": [
+                "<hr>",
+                "<line>",
+                "<rule>",
+                "<divider>"
+            ],
+            "correctAnswer": "<hr>"
+        },
+        {
+            "id": "18",
+            "text": "What tag is used to create a form?",
+            "type": "mcq",
+            "difficulty": "medium",
+            "options": [
+                "<form>",
+                "<input-form>",
+                "<user-form>",
+                "<data-form>"
+            ],
+            "correctAnswer": "<form>"
+        },
+        {
+            "id": "19",
+            "text": "Which tag creates a text input field?",
+            "type": "mcq",
+            "difficulty": "medium",
+            "options": [
+                "<input>",
+                "<textfield>",
+                "<text-input>",
+                "<type>"
+            ],
+            "correctAnswer": "<input>"
+        },
+        {
+            "id": "20",
+            "text": "What tag is used to create a button?",
+            "type": "mcq",
+            "difficulty": "medium",
+            "options": [
+                "<button>",
+                "<btn>",
+                "<click>",
+                "<submit>"
+            ],
+            "correctAnswer": "<button>"
+        },
+        {
+            "id": "21",
+            "text": "Which attribute is used to specify that an input field is required?",
+            "type": "mcq",
+            "difficulty": "hard",
+            "options": [
+                "required",
+                "mandatory",
+                "necessary",
+                "must-have"
+            ],
+            "correctAnswer": "required"
+        },
+        {
+            "id": "22",
+            "text": "What is the purpose of the alt attribute in an image tag?",
+            "type": "mcq",
+            "difficulty": "hard",
+            "options": [
+                "Alternative text for screen readers",
+                "Alternative image source",
+                "Alignment of the image",
+                "Alt text for SEO"
+            ],
+            "correctAnswer": "Alternative text for screen readers"
+        },
+        {
+            "id": "23",
+            "text": "Which tag is used to define a section of navigation links?",
+            "type": "mcq",
+            "difficulty": "hard",
+            "options": [
+                "<nav>",
+                "<navigation>",
+                "<menu>",
+                "<links>"
+            ],
+            "correctAnswer": "<nav>"
+        },
+        {
+            "id": "24",
+            "text": "What tag defines the main content of a document?",
+            "type": "mcq",
+            "difficulty": "hard",
+            "options": [
+                "<main>",
+                "<content>",
+                "<body>",
+                "<primary>"
+            ],
+            "correctAnswer": "<main>"
+        },
+        {
+            "id": "25",
+            "text": "Which tag is used to define a footer for a document or section?",
+            "type": "mcq",
+            "difficulty": "hard",
+            "options": [
+                "<footer>",
+                "<bottom>",
+                "<end>",
+                "<foot>"
+            ],
+            "correctAnswer": "<footer>"
+        },
+        {
+            "id": "26",
+            "text": "What tag is used to define a section in a document?",
+            "type": "mcq",
+            "difficulty": "hard",
+            "options": [
+                "<section>",
+                "<div>",
+                "<part>",
+                "<segment>"
+            ],
+            "correctAnswer": "<section>"
+        },
+        {
+            "id": "27",
+            "text": "Which tag is used to define an article?",
+            "type": "mcq",
+            "difficulty": "hard",
+            "options": [
+                "<article>",
+                "<post>",
+                "<content>",
+                "<story>"
+            ],
+            "correctAnswer": "<article>"
+        },
+        {
+            "id": "28",
+            "text": "What tag is used to define additional details that the user can view or hide?",
+            "type": "mcq",
+            "difficulty": "hard",
+            "options": [
+                "<details>",
+                "<expand>",
+                "<hide-show>",
+                "<additional>"
+            ],
+            "correctAnswer": "<details>"
+        },
+        {
+            "id": "29",
+            "text": "Which tag is used to define a summary or caption for a details element?",
+            "type": "mcq",
+            "difficulty": "hard",
+            "options": [
+                "<summary>",
+                "<caption>",
+                "<title>",
+                "<heading>"
+            ],
+            "correctAnswer": "<summary>"
+        },
+        {
+            "id": "30",
+            "text": "What tag is used to define a container for SVG graphics?",
+            "type": "mcq",
+            "difficulty": "hard",
+            "options": [
+                "<svg>",
+                "<graphics>",
+                "<vector>",
+                "<draw>"
+            ],
+            "correctAnswer": "<svg>"
+        }
+    ]
+}
