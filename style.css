@@ -61,6 +61,11 @@ body {
     color: white;
 }
 
+.header-btn a {
+    text-decoration: none;
+    color: inherit;
+}
+
 #sign-up {
     background-color: #fffbed;
     color: rgb(0, 0, 0);
@@ -356,4 +361,68 @@ footer {
     border-top: 2px solid #000000;
     min-height: 5vh;
     margin: auto 0;
+}
+
+
+/* About Page */
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    width: 80%;
+    gap: 30px;
+}
+
+.about, .mission {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    width: 60%;
+    height: 300px;
+    color: #2f2f2f;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+}
+
+.about h2, .mission h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.about p, .mission p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    text-align: justify;
+}
+
+.about:hover , .mission:hover {
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
 }
