@@ -117,7 +117,7 @@ async function fetchQuizQuestions(videoUrl, videoTitle, videoDescription) {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                "model": "deepseek/deepseek-chat-v3.1:free",
+                "model": "tngtech/deepseek-r1t2-chimera:free",
                 "messages": [
                     {
                         "role": "user",
@@ -211,9 +211,9 @@ function displayQuiz(count) {
         option.addEventListener('click', () => {
             if ( option.textContent === quizData.questions[count].correctAnswer ) {
                 score++;
-                option.style.backgroundColor = 'green';
+                option.style.backgroundColor = '#4caf4fd5';
             } else {
-                option.style.backgroundColor = 'red';
+                option.style.backgroundColor = '#f44336d5';
             }
             nextButton.style.display = 'block';
             options.forEach(opt => opt.style.pointerEvents = 'none');
@@ -233,6 +233,7 @@ nextButton.addEventListener('click', () => {
 function evaluateQuiz() {
     quizSection.style.display = 'none';
     resultSection.style.display = 'flex';
+    progressSection.style.display = 'none';
     resultSection.innerHTML = `
         <h2 id='quiz-completed'>Quiz Completed!</h2>
         <p id='quiz-score'>Your Score: ${score} out of ${quizData.questions.length}</p>
@@ -249,7 +250,7 @@ function evaluateQuiz() {
 
 
 function updateProgress(count, total) {
-    const progressPercent = ((count + 1) / total) * 100;
+    const progressPercent = ((count) / total) * 100;
     progressFill.style.width = `${progressPercent}%`;
-    progressText.textContent = `Question ${count + 1} of ${total}`;
+    progressText.textContent = `Question ${count} of ${total}`;
 }
