@@ -23,6 +23,11 @@ const question = document.getElementById('question-text')
 const options = [document.getElementById('option-1'), document.getElementById('option-2'), document.getElementById('option-3'), document.getElementById('option-4')]
 const submitButton = document.getElementById('submit-btn');
 
+
+const progressSection = document.querySelector('.progress');
+const progressText = document.getElementById('progress-text');
+const progressFill = document.getElementById('progress-fill');
+
 let count = 0;
 let score = 0;
 
@@ -187,6 +192,9 @@ async function fetchQuizQuestions(videoUrl, videoTitle, videoDescription) {
 
 function displayQuiz(count) {
 
+    updateProgress(count, quizData.questions.length);
+
+    progressSection.style.display = 'flex';
     nextButton.style.display = 'none';
     options.forEach(option => option.style.backgroundColor = '#f4f4f4');
     options.forEach(opt => opt.style.pointerEvents = 'auto');
@@ -237,4 +245,11 @@ function evaluateQuiz() {
         count = 0;
         score = 0;
     });
+}
+
+
+function updateProgress(count, total) {
+    const progressPercent = ((count + 1) / total) * 100;
+    progressFill.style.width = `${progressPercent}%`;
+    progressText.textContent = `Question ${count + 1} of ${total}`;
 }

@@ -210,6 +210,44 @@ body {
     background-color: #45a049;
 }
 
+.progress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0 0 0;
+    width: 100%;
+    color: rgb(36, 36, 36);
+    margin-top: 80px;
+    margin: 0 auto;
+}
+
+.progress-bar {
+    width: 39%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+#progress-bar {
+    width: 100%;
+    max-width: 600px; /* Or whatever width you prefer */
+    height: 20px;
+    background-color: #e0e0e0; /* A light grey background */
+    border-radius: 10px;
+    overflow: hidden; /* Ensures the fill stays inside the rounded corners */
+    margin-top: 10px;
+}
+
+#progress-fill {
+    height: 100%;
+    width: 0%; /* Start at 0% width */
+    background-color: #4CAF50; /* A nice green color */
+    border-radius: 10px;
+    transition: width 0.4s ease-in-out; /* Smooth transition effect */
+}
 
 .quiz {
     display: none;
